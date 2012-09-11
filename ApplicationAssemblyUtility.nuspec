@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ApplicationAssemblyUtility</id>
+    <version>1.0.0</version>
+    <authors>Jason Duffett</authors>
+    <owners>Jason Duffett</owners>
+    <licenseUrl>https://espares.kilnhg.com/Code/Levity/Group/levity-maitred/Files/LICENSE</licenseUrl>
+    <projectUrl>https://espares.kilnhg.com/Code/Levity/Group/levity-maitred/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MaitreD Endpoint for managing customer details</description>
+    <copyright>Copyright 2012</copyright>
+    <tags>Application Version EntryAssembly</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\**" exclude="**\*.pdb" />
+  </files>
+</package>
