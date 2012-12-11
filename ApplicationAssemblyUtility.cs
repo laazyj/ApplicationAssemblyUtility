@@ -1,5 +1,7 @@
 using System;
+using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Threading;
 using System.Web;
@@ -31,6 +33,27 @@ namespace eSpares.Levity
         public static string GetAssemblyVersionFromType(Type type)
         {
             return type.Assembly.GetName().Version.ToString(3);
+        }
+
+        /// <summary>
+        /// Returns true if the current application assembly is built in Debug mode.
+        /// </summary>
+        public static bool ApplicationIsDebugBuild()
+        {
+            return AssemblyIsDebugBuild(ApplicationAssembly);
+        }
+
+        /// <summary>
+        /// Checks for the DebuggableAttribute on the assembly provided to determine
+        /// whether it has been built in Debug mode.
+        /// </summary>
+        public static bool AssemblyIsDebugBuild(Assembly assembly)
+        {
+            return assembly
+                .GetCustomAttributes(false)
+                .OfType<DebuggableAttribute>()
+                .Select(attr => attr.IsJITTrackingEnabled)
+                .FirstOrDefault();
         }
 
 		static string getApplicationBinFolder()
