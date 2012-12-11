@@ -80,7 +80,7 @@ namespace eSpares.Levity
         {
             if (context == null) throw new ArgumentNullException("context");
 
-            var handler = context.CurrentHandler;
+            var handler = context.ApplicationInstance;
             if (handler == null) return null;
 
             var type = handler.GetType();
