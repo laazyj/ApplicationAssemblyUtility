@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ApplicationAssemblyUtility")]
-[assembly: AssemblyDescription("Utility methods for interrogating the application's main assembly.")]
+[assembly: AssemblyTitle("ConsoleApplication")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("LaazyJ Enterprises")]
-[assembly: AssemblyProduct("ApplicationAssemblyUtility")]
-[assembly: AssemblyCopyright("Copyright © Jason Duffett 2011")]
+[assembly: AssemblyCompany("eSpares Ltd")]
+[assembly: AssemblyProduct("ConsoleApplication")]
+[assembly: AssemblyCopyright("Copyright © eSpares Ltd 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("cc1e93a9-de20-4d76-8099-d537aa204c10")]
+[assembly: Guid("60bf9a4f-f2cb-4a26-8b33-a80e823d7c87")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1.0.*")]
+[assembly: AssemblyVersion("1.0.1.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
