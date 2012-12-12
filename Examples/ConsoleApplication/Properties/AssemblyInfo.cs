@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MvcApplication")]
+[assembly: AssemblyTitle("ConsoleApplication")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("eSpares Ltd")]
-[assembly: AssemblyProduct("MvcApplication")]
+[assembly: AssemblyProduct("ConsoleApplication")]
 [assembly: AssemblyCopyright("Copyright © eSpares Ltd 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4b57e222-8114-4bcb-a3ff-e24ee03e1bcf")]
+[assembly: Guid("60bf9a4f-f2cb-4a26-8b33-a80e823d7c87")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -29,7 +29,8 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-// You can specify all the values or you can default the Revision and Build Numbers 
+// You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("1.0.2.0")]
+// [assembly: AssemblyVersion("1.0.*")]
+[assembly: AssemblyVersion("1.0.1.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
+using System.Web;
 using System.Web.Compilation;
 
 namespace eSpares.Levity
@@ -65,10 +66,14 @@ namespace eSpares.Levity
 		static Assembly getApplicationAssembly()
 		{
             // Are we in a web application?
-            var globalAsax = BuildManager.GetGlobalAsaxType();
-            if (globalAsax != null && globalAsax.BaseType != null) return globalAsax.BaseType.Assembly;
+            if (HttpContext.Current != null)
+            {
+                // Get the global application type
+                var globalAsax = BuildManager.GetGlobalAsaxType();
+                if (globalAsax != null && globalAsax.BaseType != null) return globalAsax.BaseType.Assembly;
+            }
 
-			// Fallback to executing assembly
+			// Provide entry assembly and fallback to executing assembly
 			return Assembly.GetEntryAssembly() ?? Assembly.GetExecutingAssembly();
 		}
     }
