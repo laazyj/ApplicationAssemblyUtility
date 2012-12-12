@@ -4,14 +4,12 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
-using System.Web;
+using System.Web.Compilation;
 
 namespace eSpares.Levity
 {
     public static class ApplicationAssemblyUtility
     {
-        const string AspNetNamespace = "ASP";
-
 		static readonly Lazy<Assembly> _applicationAssembly = new Lazy<Assembly>(getApplicationAssembly, LazyThreadSafetyMode.ExecutionAndPublication);
 		static readonly Lazy<string> _applicationBinFolder = new Lazy<string>(getApplicationBinFolder, LazyThreadSafetyMode.ExecutionAndPublication);
 
@@ -66,29 +64,12 @@ namespace eSpares.Levity
 
 		static Assembly getApplicationAssembly()
 		{
-			// Are we in a web application?
-			var ctx = HttpContext.Current;
-
-			// Cannot use EntryAssembly for ASP.NET applications
-			var assembly = ctx != null ? getWebApplicationAssembly(ctx) : Assembly.GetEntryAssembly();
+            // Are we in a web application?
+            var globalAsax = BuildManager.GetGlobalAsaxType();
+            if (globalAsax != null && globalAsax.BaseType != null) return globalAsax.BaseType.Assembly;
 
 			// Fallback to executing assembly
-			return assembly ?? Assembly.GetExecutingAssembly();
+			return Assembly.GetEntryAssembly() ?? Assembly.GetExecutingAssembly();
 		}
-
-        static Assembly getWebApplicationAssembly(HttpContext context)
-        {
-            if (context == null) throw new ArgumentNullException("context");
-
-            var handler = context.ApplicationInstance;
-            if (handler == null) return null;
-
-            var type = handler.GetType();
-            while (type != null && type != typeof(object) && type.Namespace == AspNetNamespace)
-                type = type.BaseType;
-
-            return type.Assembly;
-        }
-
     }
 }
