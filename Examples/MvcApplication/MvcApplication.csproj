@@ -44,6 +44,7 @@
     <Reference Include="System.Web.Routing" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationAssemblyDetails.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -64,13 +65,13 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\AssemblyWithoutReferenceToApplication\AssemblyWithoutReferenceToApplication.csproj">
-      <Project>{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}</Project>
-      <Name>AssemblyWithoutReferenceToApplication</Name>
-    </ProjectReference>
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Index.cshtml" />
+    <ProjectReference Include="..\..\ApplicationAssemblyUtility.csproj">
+      <Project>{A18400E0-C9BD-40D6-BA0D-80BFD4B0B388}</Project>
+      <Name>ApplicationAssemblyUtility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

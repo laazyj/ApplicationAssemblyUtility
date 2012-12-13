@@ -48,13 +48,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\AssemblyWithoutReferenceToApplication\AssemblyWithoutReferenceToApplication.csproj">
-      <Project>{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}</Project>
-      <Name>AssemblyWithoutReferenceToApplication</Name>
-    </ProjectReference>
+    <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <ProjectReference Include="..\..\ApplicationAssemblyUtility.csproj">
+      <Project>{A18400E0-C9BD-40D6-BA0D-80BFD4B0B388}</Project>
+      <Name>ApplicationAssemblyUtility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
