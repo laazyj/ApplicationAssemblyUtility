@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{94
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplication", "Examples\MvcApplication\MvcApplication.csproj", "{7AA07C9D-17B0-42E8-B42C-5778AE4391FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyWithoutReferenceToApplication", "..\AssemblyWithoutReferenceToApplication\AssemblyWithoutReferenceToApplication.csproj", "{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsApplication", "Examples\WebFormsApplication\WebFormsApplication.csproj", "{E5039360-A557-4444-B917-A8462163912A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "Examples\ConsoleApplication\ConsoleApplication.csproj", "{39A6718C-CA79-4321-B721-74A978B8207F}"
@@ -43,16 +41,6 @@ Global
 		{7AA07C9D-17B0-42E8-B42C-5778AE4391FC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{7AA07C9D-17B0-42E8-B42C-5778AE4391FC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{7AA07C9D-17B0-42E8-B42C-5778AE4391FC}.Release|x86.ActiveCfg = Release|Any CPU
-		{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}.Release|x86.ActiveCfg = Release|Any CPU
 		{E5039360-A557-4444-B917-A8462163912A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E5039360-A557-4444-B917-A8462163912A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5039360-A557-4444-B917-A8462163912A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -79,7 +67,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7AA07C9D-17B0-42E8-B42C-5778AE4391FC} = {94560679-18D2-416F-9446-EA5F0394855A}
-		{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B} = {94560679-18D2-416F-9446-EA5F0394855A}
 		{E5039360-A557-4444-B917-A8462163912A} = {94560679-18D2-416F-9446-EA5F0394855A}
 		{39A6718C-CA79-4321-B721-74A978B8207F} = {94560679-18D2-416F-9446-EA5F0394855A}
 	EndGlobalSection

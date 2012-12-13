@@ -1,5 +1,5 @@
 ﻿using System;
-using AssemblyWithoutReferenceToApplication;
+using eSpares.Levity;
 
 namespace ConsoleApplication
 {
@@ -7,11 +7,10 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {
-            var assemblyDetails = ApplicationAssemblyDetails.Current;
-            Console.WriteLine("The application assembly is: " + assemblyDetails.ApplicationAssembly);
-            Console.WriteLine("The application bin folder is: " + assemblyDetails.BinFolder);
-            Console.WriteLine("The application version number is: " + assemblyDetails.VersionNumber);
-            Console.WriteLine("The application was built in " + assemblyDetails.BuildMode + " mode.");
+            Console.WriteLine("The application assembly is: " + ApplicationAssemblyUtility.ApplicationAssembly);
+            Console.WriteLine("The application bin folder is: " + ApplicationAssemblyUtility.ApplicationBinFolder);
+            Console.WriteLine("The application version number is: " + ApplicationAssemblyUtility.GetApplicationVersionNumber());
+            Console.WriteLine("The application was built in {0} mode.", ApplicationAssemblyUtility.ApplicationIsDebugBuild() ? "Debug" : "Release");
             Console.WriteLine("Press any key to exit...");
             Console.Read();
         }
