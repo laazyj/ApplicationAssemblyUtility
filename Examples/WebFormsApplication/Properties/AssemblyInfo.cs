@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ApplicationAssemblyUtility")]
-[assembly: AssemblyDescription("Utility methods for interrogating the application's main assembly.")]
+[assembly: AssemblyTitle("WebFormsApplication")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("LaazyJ Enterprises")]
-[assembly: AssemblyProduct("ApplicationAssemblyUtility")]
-[assembly: AssemblyCopyright("Copyright © Jason Duffett 2011")]
+[assembly: AssemblyCompany("eSpares Ltd")]
+[assembly: AssemblyProduct("WebFormsApplication")]
+[assembly: AssemblyCopyright("Copyright © eSpares Ltd 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("cc1e93a9-de20-4d76-8099-d537aa204c10")]
+[assembly: Guid("8213735f-bd20-4791-86e0-af8d33c0303c")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -29,8 +29,7 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-// You can specify all the values or you can default the Build and Revision Numbers 
+// You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1.0.*")]
+[assembly: AssemblyVersion("1.0.3.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
