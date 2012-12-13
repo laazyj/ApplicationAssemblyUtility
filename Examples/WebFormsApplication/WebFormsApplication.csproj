@@ -52,6 +52,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationAssemblyDetails.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -64,11 +65,10 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\AssemblyWithoutReferenceToApplication\AssemblyWithoutReferenceToApplication.csproj">
-      <Project>{EE0AD796-E3A7-4D0A-A605-9FFBD5EBC48B}</Project>
-      <Name>AssemblyWithoutReferenceToApplication</Name>
+    <ProjectReference Include="..\..\ApplicationAssemblyUtility.csproj">
+      <Project>{A18400E0-C9BD-40D6-BA0D-80BFD4B0B388}</Project>
+      <Name>ApplicationAssemblyUtility</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
