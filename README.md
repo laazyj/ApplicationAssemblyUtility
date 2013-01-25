@@ -5,3 +5,4 @@ Works for Web applications (where GetEntryAssembly won't).
 
 See [this answer on StackOverflow](http://stackoverflow.com/questions/756031/using-the-web-application-version-number-from-an-assembly-asp-net-c/4803419#4803419) for more detail.
 
+ApplicationAssemblyUtility is also available on NuGet at <http://nuget.org/packages/ApplicationAssemblyUtility/>
