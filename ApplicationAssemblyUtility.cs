@@ -27,14 +27,20 @@ namespace eSpares.Levity
         /// <summary>
         /// Returns the version number with depth 3 <seealso cref="https://msdn.microsoft.com/en-us/library/bff8h2e1%28v=vs.110%29.aspx"/>
         /// </summary>
-        /// <param name="double00">Specify if you want double digits in minor and  </param>
+        /// <param name="double00">Specify if you want double digits in minor and build fields </param>
         /// <returns></returns>
         public static string GetApplicationVersionNumber(bool double00 = false)
         {
+            
             Version v = ApplicationAssembly.GetName().Version;
             return getVersionString(v, double00);
         }
 
+        /// <summary>
+        /// Returns the version number with depth 3 <seealso cref="https://msdn.microsoft.com/en-us/library/bff8h2e1%28v=vs.110%29.aspx"/>
+        /// </summary>
+        /// <param name="double00">Specify if you want double digits in minor and build fields </param>
+        /// <returns></returns>
         public static string GetAssemblyVersionFromType(Type type, bool double00 = false)
         {
             Version v = type.Assembly.GetName().Version;
