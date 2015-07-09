@@ -7,6 +7,7 @@
     <title>Example WebForms Application</title>
 </head>
 <body>
+    <p>Single digits</p>
     <p>
         The application assembly is: <strong><%= Global.ApplicationAssemblyDetails.ApplicationAssembly %></strong>
     </p>
@@ -18,6 +19,20 @@
     </p>
     <p>
         This application was built in <strong><%= Global.ApplicationAssemblyDetails.BuildMode %></strong> mode.
-    </p>    
+    </p
+    
+        <p>Double digits</p>
+          <p>
+        The application assembly is: <strong><%= Global.ApplicationAssemblyDetails00.ApplicationAssembly %></strong>
+    </p>
+    <p>
+        The application bin folder is: <strong><%= Global.ApplicationAssemblyDetails00.BinFolder %></strong>
+    </p>
+    <p>
+        The application version number is: <strong><%= Global.ApplicationAssemblyDetails00.VersionNumber %></strong>
+    </p>
+    <p>
+        This application was built in <strong><%= Global.ApplicationAssemblyDetails00.BuildMode %></strong> mode.
+    </p>        
 </body>
 </html>

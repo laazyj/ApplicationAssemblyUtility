@@ -1,9 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationAssemblyUtility", "ApplicationAssemblyUtility.csproj", "{A18400E0-C9BD-40D6-BA0D-80BFD4B0B388}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{94560679-18D2-416F-9446-EA5F0394855A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationAssemblyUtility", "ApplicationAssemblyUtility.csproj", "{A18400E0-C9BD-40D6-BA0D-80BFD4B0B388}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcApplication", "Examples\MvcApplication\MvcApplication.csproj", "{7AA07C9D-17B0-42E8-B42C-5778AE4391FC}"
 EndProject
