@@ -2,14 +2,14 @@
 <package >
   <metadata>
     <id>ApplicationAssemblyUtility</id>
-    <version>1.1.0</version>
-    <authors>Jason Duffett</authors>
+    <version>1.2.1</version>
+    <authors>Jason Duffett, mad4hit</authors>
     <owners>Jason Duffett</owners>
     <licenseUrl>https://github.com/laazyj/ApplicationAssemblyUtility/blob/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/laazyj/ApplicationAssemblyUtility/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Methods for finding the application's version, based on the main or entry assembly.</description>
-    <copyright>Copyright 2012</copyright>
+    <copyright>Copyright © Jason Duffett 2011</copyright>
     <tags>Application Version EntryAssembly</tags>
   </metadata>
   <files>
