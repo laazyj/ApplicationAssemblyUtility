@@ -51,7 +51,7 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ApplicationAssemblyUtility.csproj">
+    <ProjectReference Include="..\..\ApplicationAssemblyUtility\ApplicationAssemblyUtility.csproj">
       <Project>{A18400E0-C9BD-40D6-BA0D-80BFD4B0B388}</Project>
       <Name>ApplicationAssemblyUtility</Name>
     </ProjectReference>

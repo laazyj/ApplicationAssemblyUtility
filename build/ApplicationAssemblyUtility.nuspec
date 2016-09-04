@@ -13,6 +13,6 @@
     <tags>Application Version EntryAssembly</tags>
   </metadata>
   <files>
-    <file src="bin\Release\ApplicationAssemblyUtility.dll" target="lib\net40" />
+    <file src="ApplicationAssemblyUtility.dll" target="lib\net40" />
   </files>
 </package>
