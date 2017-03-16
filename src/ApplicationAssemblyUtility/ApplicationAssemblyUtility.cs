@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.ServiceModel;
 using System.Threading;
 using System.Web;
 using System.Web.Compilation;
@@ -88,8 +89,8 @@ namespace eSpares.Levity
 
         static Assembly getApplicationAssembly()
         {
-            // Are we in a web application?
-            if (HttpContext.Current != null)
+            // Are we in a web application or WCF application?
+            if (HttpContext.Current != null || OperationContext.Current?.RequestContext != null)
             {
                 // Get the global application type
                 var globalAsax = BuildManager.GetGlobalAsaxType();
